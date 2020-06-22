@@ -12,14 +12,20 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy-all</artifactId>
-            <version>2.4.5</version>
+            <groupId>com.apl</groupId>
+            <artifactId>apl-service-pom-parent</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.apl</groupId>
             <artifactId>apl-wms-price-pojo</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.apl</groupId>
+            <artifactId>apl-lib</artifactId>
             <version>1.0.0</version>
         </dependency>
 
