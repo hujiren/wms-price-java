@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.apl.wms.price.mapper.WarehousePriceItemMapper">
+
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, wh_type, module_name, item_code, item_name, item_name_en, unit_name, currency, remark, inner_org_id
+    </sql>
+
+
+    <!-- 查找详情 2020-06-22-->
+    <select id="getById" resultType="com.apl.wms.price.vo.WarehousePriceItemInfoVo">
+        SELECT
+          id, 
+          wh_type, 
+          module_name, 
+          item_code, 
+          item_name, 
+          item_name_en, 
+          unit_name, 
+          currency, 
+          remark
+        FROM
+          warehouse_price_item
+        where
+          id = #{id}
+    </select>
+
+    <!-- 查找列表 2020-06-22-->
+    <select id="getList" resultType="com.apl.wms.price.vo.WarehousePriceItemListVo">
+        SELECT
+           id, 
+           wh_type, 
+           module_name, 
+           item_code, 
+           item_name, 
+           item_name_en, 
+           unit_name, 
+           currency, 
+           remark
+        FROM
+           warehouse_price_item
+        <where>
+            1=1
+            <if test="kd.moduleName != null and kd.moduleName != ''">
+                and module_name = #{kd.moduleName}
+            </if>
+            <if test="kd.whType != null">
+                and wh_type = #{kd.whType}
+            </if>
+            <if test="kd.keyword != null and kd.keyword != ''">
+            and item_code like concat('%', #{kd.keyword}, '%')
+            OR item_name like concat('%', #{kd.keyword}, '%')
+            OR item_name_en like concat('%', #{kd.keyword}, '%')
+            OR currency like concat('%', #{kd.keyword}, '%')
+            OR unit_name = #{kd.keyword}
+            </if>
+        </where>
+        order by id desc
+    </select>
+
+
+</mapper>

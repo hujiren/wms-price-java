@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="apl-wms-price-manage-app" />
+        <module name="apl-wms-price-pojo" />
+        <module name="apl-wms-price-query-app" />
+        <module name="apl-wms-price-service-impl" />
+        <module name="apl-wms-price-lib" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="apl-wms-price-java" target="1.5" />
+      <module name="apl-wms-price-lib" target="8" />
+      <module name="apl-wms-price-manage-app" target="8" />
+      <module name="apl-wms-price-pojo" target="1.5" />
+      <module name="apl-wms-price-pojo-main" target="8" />
+      <module name="apl-wms-price-query-app" target="8" />
+      <module name="apl-wms-price-service-impl" target="1.8" />
+      <module name="apl-wms-price-service-main" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="apl-wms-price-manage-app" options="-parameters" />
+      <module name="apl-wms-price-query-app" options="-parameters" />
+    </option>
+  </component>
+</project>

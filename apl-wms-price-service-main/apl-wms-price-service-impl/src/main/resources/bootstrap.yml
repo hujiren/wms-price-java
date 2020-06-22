@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: apl-wms-price-service-impl
+
+  profiles:
+    include:
+      common, apl-wms-price-service-impl
+
+  cloud:
+    consul:
+      config:
+        fail-fast: false

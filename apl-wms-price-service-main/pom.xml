@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <groupId>com.apl</groupId>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>apl-wms-price-service-main</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <modules>
+        <module>apl-wms-price-manage-app</module>
+        <module>apl-wms-price-query-app</module>
+        <module>apl-wms-price-service-impl</module>
+    </modules>
+
+</project>
