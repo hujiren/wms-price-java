@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/apl-wms-price-java.iml" filepath="$PROJECT_DIR$/.idea/apl-wms-price-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apl-wms-price-java.iml" filepath="$PROJECT_DIR$/apl-wms-price-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/apl-wms-price-lib/apl-wms-price-lib.iml" filepath="$PROJECT_DIR$/apl-wms-price-lib/apl-wms-price-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/apl-wms-price-service-main/apl-wms-price-manage-app/apl-wms-price-manage-app.iml" filepath="$PROJECT_DIR$/apl-wms-price-service-main/apl-wms-price-manage-app/apl-wms-price-manage-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/apl-wms-price-pojo-main/apl-wms-price-pojo/apl-wms-price-pojo.iml" filepath="$PROJECT_DIR$/apl-wms-price-pojo-main/apl-wms-price-pojo/apl-wms-price-pojo.iml" />

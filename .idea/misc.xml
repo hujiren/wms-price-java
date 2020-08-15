@@ -6,8 +6,12 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/apl-wms-price-lib/pom.xml" />
+        <option value="$PROJECT_DIR$/apl-wms-price-service-main/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/apl-wms-price-service-main/apl-wms-price-service-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/apl-wms-price-service-main/apl-wms-price-query-app/pom.xml" />
+        <option value="$PROJECT_DIR$/apl-wms-price-service-main/apl-wms-price-manage-app/pom.xml" />
+        <option value="$PROJECT_DIR$/apl-wms-price-lib/pom.xml" />
       </list>
     </option>
   </component>
